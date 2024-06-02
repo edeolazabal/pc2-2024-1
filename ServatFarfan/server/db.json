@@ -142,6 +142,14 @@
       "fechaAprobacion": "2024-06-02T05:00:00.000Z",
       "tipo": "Administrativo",
       "presupuesto": 15555
+    },
+    {
+      "id": "2bf4",
+      "codigo": "XYZ",
+      "descripcion": "ABC S.A:",
+      "fechaAprobacion": "2024-06-02T05:00:00.000Z",
+      "tipo": "Administrativo",
+      "presupuesto": "15000"
     }
   ]
 }

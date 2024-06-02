@@ -1,0 +1,36 @@
+{
+    "descriptions": [
+      {
+        "id": "1",
+        "Codigo": "A",
+        "Descripcion": "Biologia",
+        "FechaDeAprobacion": "2024-05-29",
+        "Tipo": "Comercial",
+        "Presupuesto": 50000
+      },
+      {
+        "id": "2",
+        "Codigo": "B",
+        "Descripcion": "Matemática",
+        "FechaDeAprobacion": "2024-05-29",
+        "Tipo": "Académica",
+        "Presupuesto": 58430
+      },
+      {
+        "id": 3,
+        "Codigo": "C",
+        "Descripcion": "Historia",
+        "FechaDeAprobacion": "2024-06-02T05:00:00.000Z",
+        "Tipo": "Comercial",
+        "Presupuesto": 13000
+      },
+      {
+        "id": 4,
+        "Codigo": "D",
+        "Descripcion": "Crema Dental",
+        "FechaDeAprobacion": "2024-06-02T05:00:00.000Z",
+        "Tipo": "Comercial",
+        "Presupuesto": 14500
+      }
+    ]
+  }

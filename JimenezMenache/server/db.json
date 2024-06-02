@@ -1,0 +1,20 @@
+{
+    "investigciones": [
+        {
+            "id": 1,
+            "code": "A",
+            "description": "Biologia",
+            "approvalDate": "2024-05-29",
+            "type": "Comercial",
+            "budget": 50000
+        },
+        {
+            "id": 2,
+            "code": "B",
+            "description": "Matemática",
+            "approvalDate": "2024-05-29",
+            "type": "Académica",
+            "budget": 58430
+        }
+    ]
+}

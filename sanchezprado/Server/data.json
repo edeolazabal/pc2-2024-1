@@ -8,70 +8,91 @@
       "tonelas_producidas": 12000
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "daniel",
       "fecha_inicio": "2024-05-15T05:00:00.000Z",
       "tipo": "dsadad",
       "tonelas_producidas": 23
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "danielk",
       "fecha_inicio": "2024-05-31T05:00:00.000Z",
       "tipo": "adada",
       "toneladas_producidas": 0
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "dasda",
       "fecha_inicio": "2024-05-24T05:00:00.000Z",
       "tipo": "da",
       "toneladas_producidas": " "
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "dadasda",
       "fecha_inicio": "2024-05-31T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladas_producidas": " "
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "dadasda",
       "fecha_inicio": "2024-05-31T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladas_producidas": " "
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "sada",
       "fecha_inicio": "2024-05-11T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladas_producidas": " "
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "dadasd",
       "fecha_inicio": "2024-05-23T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladas_producidas": 5145254
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "dasdad",
       "fecha_inicio": "2024-05-17T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladas_producidas": " "
     },
     {
-      "id": 0,
+      "id": "0",
       "nombre": "prueba 23",
       "fecha_inicio": "2024-05-24T05:00:00.000Z",
       "tipo": "Mixta",
       "toneladas_producidas": 123456
     },
     {
-      "id": 0,
+      "id": "0",
+      "nombre": "sdadad",
+      "fecha_inicio": "2024-05-08T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladas_producidas": " "
+    },
+    {
+      "id": "0",
+      "nombre": "sdadad",
+      "fecha_inicio": "2024-05-08T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladas_producidas": " "
+    },
+    {
+      "id": "0",
+      "nombre": "sdadad",
+      "fecha_inicio": "2024-05-08T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladas_producidas": " "
+    },
+    {
+      "id": "0",
       "nombre": "sdadad",
       "fecha_inicio": "2024-05-08T05:00:00.000Z",
       "tipo": "Subterránea",
@@ -79,24 +100,10 @@
     },
     {
       "id": 0,
-      "nombre": "sdadad",
-      "fecha_inicio": "2024-05-08T05:00:00.000Z",
+      "nombre": "ABC",
+      "fecha_inicio": "2024-06-02T05:00:00.000Z",
       "tipo": "Subterránea",
-      "toneladas_producidas": " "
-    },
-    {
-      "id": 0,
-      "nombre": "sdadad",
-      "fecha_inicio": "2024-05-08T05:00:00.000Z",
-      "tipo": "Subterránea",
-      "toneladas_producidas": " "
-    },
-    {
-      "id": 0,
-      "nombre": "sdadad",
-      "fecha_inicio": "2024-05-08T05:00:00.000Z",
-      "tipo": "Subterránea",
-      "toneladas_producidas": " "
+      "toneladas_producidas": 30000
     }
   ]
 }

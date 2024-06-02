@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Investigation } from '../models/investigation';
 
-const base_url = "http://localhost:3001/investigations";
+const base_url = "http://localhost:3000/investigations";
 
 @Injectable({
   providedIn: 'root'

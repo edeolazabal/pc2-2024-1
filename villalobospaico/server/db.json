@@ -1,0 +1,36 @@
+{
+  "descriptions": [
+    {
+      "id": "1",
+      "code": "A",
+      "description": "Biologia",
+      "approvalDate": "2024-05-29",
+      "type": "Comercial",
+      "budget": 50000
+    },
+    {
+      "id": "2",
+      "code": "B",
+      "description": "Matemática",
+      "approvalDate": "2024-05-29",
+      "type": "Académica",
+      "budget": 58430
+    },
+    {
+      "id": "5cdc",
+      "Id": 0,
+      "description": "Historia",
+      "date": "2024-06-02T05:00:00.000Z",
+      "type": "Comercial",
+      "budget": 13000
+    },
+    {
+      "id": "6e13",
+      "Id": 0,
+      "description": "Crema Dental",
+      "date": "2024-06-02T05:00:00.000Z",
+      "type": "Comercial",
+      "budget": 14500
+    }
+  ]
+}

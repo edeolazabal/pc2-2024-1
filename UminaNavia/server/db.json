@@ -71,6 +71,14 @@
       "fechaInicio": "2024-05-16T05:00:00.000Z",
       "tipo": "Subterránea",
       "toneladasProducidas": "100"
+    },
+    {
+      "id": "cda1",
+      "codigo": "C",
+      "nombre": "MINA X",
+      "fechaInicio": "2024-06-02T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladasProducidas": "123500"
     }
   ]
 }

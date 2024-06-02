@@ -1,0 +1,28 @@
+{
+    "minas": [
+      {
+        "codigo": 1,
+        "nombre": "Mina El Dorado",
+        "fechaOperacion": "2015-03-25T00:00:00Z",
+        "tipo": "Oro",
+        "toneladaspro": 50000,
+        "id": "0a6e"
+      },
+      {
+        "codigo": 2,
+        "nombre": "Mina La Esperanza",
+        "fechaOperacion": "2010-07-14T00:00:00Z",
+        "tipo": "Cobre",
+        "toneladaspro": 75000,
+        "id": "f788"
+      },
+      {
+        "codigo": 3,
+        "nombre": "Mina Santa María",
+        "fechaOperacion": "2018-11-20T00:00:00Z",
+        "tipo": "Plata",
+        "toneladaspro": 30000,
+        "id": "cf6b"
+      }
+    ]
+  }

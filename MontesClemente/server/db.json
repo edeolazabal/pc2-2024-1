@@ -1,0 +1,36 @@
+{
+  "minas": [
+    {
+      "codigo": 1,
+      "nombre": "Mina El Dorado",
+      "fechaInicioOperacion": "2015-03-25T00:00:00Z",
+      "tipo": "Oro",
+      "toneladasProducidas": 50000,
+      "id": "c19c"
+    },
+    {
+      "codigo": 2,
+      "nombre": "Mina La Esperanza",
+      "toneladasProducidas": "2010-07-14T00:00:00Z",
+      "tipo": "Cobre",
+      "toneladaspro": 75000,
+      "id": "e93a"
+    },
+    {
+      "codigo": 3,
+      "nombre": "Mina Santa María",
+      "toneladasProducidas": "2018-11-20T00:00:00Z",
+      "tipo": "Plata",
+      "toneladaspro": 30000,
+      "id": "0993"
+    },
+    {
+      "id": "d3ac",
+      "codigo": 0,
+      "nombre": "Nueva",
+      "fechaInicioOperacion": "2024-06-02T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladasProducidas": 35000
+    }
+  ]
+}

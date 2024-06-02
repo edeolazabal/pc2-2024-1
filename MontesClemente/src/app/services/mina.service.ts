@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Mina } from '../model/mina';
 
-const base_url = 'http://localhost:8080/api/mina'
-//const base_url = "http://localhost:3000/Mina"
+// const base_url = 'http://localhost:8080/api/mina'
+const base_url = "http://localhost:3000/minas"
 
 @Injectable({
   providedIn: 'root'

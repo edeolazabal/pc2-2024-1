@@ -4,7 +4,7 @@ import { MadalengoitiaListarComponent } from './components/madalengoitia-listar/
 import { MadalengoitiaCrearComponent } from './components/madalengoitia-crear/madalengoitia-crear.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: 'list', component:MadalengoitiaListarComponent},
   {path: 'madalengoitia/nuevo', component:MadalengoitiaCrearComponent}
 ];
