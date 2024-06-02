@@ -1,0 +1,45 @@
+mat-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .red-button:hover {
+    background-color: RED;
+  }
+
+
+mat-card h2 {
+    margin-bottom: 16px;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-header-cell {
+    font-weight: bold;
+}
+
+.mat-cell,
+.mat-header-cell {
+    padding: 8px;
+}
+
+.mat-paginator {
+    margin-top: 20px;
+}

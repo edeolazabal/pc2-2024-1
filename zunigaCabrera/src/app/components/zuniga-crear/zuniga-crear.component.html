@@ -1,0 +1,57 @@
+<mat-card>
+    <h2>Añadir nueva investigacion</h2>
+  <form [formGroup]="myForm" autocomplete="off">
+    <div class="investigacion-container">
+
+        <!-- codigo-->
+    
+      <mat-form-field>
+        <input
+        matInput
+        type="number"
+        placeholder="Codigo"
+        formControlName="Codigo"
+        required />
+      </mat-form-field>
+      
+<!-- descripcion-->
+
+      <mat-form-field>
+        <input
+          matInput
+          type="String"
+          placeholder="Descripcion"
+          formControlName="Descripcion"
+          required
+        />
+      </mat-form-field>
+     
+
+    <!-- presupuesto -->
+    <mat-form-field>
+        <input
+        matInput
+        type="number"
+        placeholder="Presupuesto"
+        formControlName="Presupuesto"
+        required />
+      </mat-form-field>
+
+  </div>
+
+  <div>
+    <button class="button"
+    mat-raised-button
+    color="primary"
+    [disabled]="myForm.invalid"
+    type="button"
+    style="margin-left: 10 px"
+    (click)="NuevaInvestigacion()"
+  >
+    NUEVA RENTA
+  </button>
+
+    </div>
+
+  </form>
+  </mat-card>

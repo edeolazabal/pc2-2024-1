@@ -1,0 +1,50 @@
+<mat-card>
+    <h2>Nuevo Mina</h2>
+    <form [formGroup]="minaForm" autocomplete="off">
+        <div class="curso-container">
+            <!--codigo-->
+            <mat-form-field>
+                <input matInput placeholder="codigo" formControlName="codigo" required />
+            </mat-form-field>
+            <div *ngIf="minaForm.get('codigo')?.hasError('required') && minaForm.get('codigo')?.touched" style="margin-top: -20px">
+                <span class="mda-form-msg"> Este campo es obligatorio </span>
+            </div>
+            <!--nombre-->
+            <mat-form-field>
+                <input matInput placeholder="nombre" formControlName="nombre" required />
+            </mat-form-field>
+            <div *ngIf=" minaForm.get('nombre')?.hasError('required') && minaForm.get('nombre')?.touched" style="margin-top: -20px" >
+                <span class="mda-form-msg"> Este campo es obligatorio </span>
+            </div>
+            <!--fechaInicio-->
+            <mat-form-field>
+                <mat-label>Fecha Inicio</mat-label>
+                <input matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY" formControlName="fechaInicio" required>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-hint>MM/DD/YYYY</mat-hint>
+            </mat-form-field>
+            <div *ngIf="minaForm.get('fechaInicio')?.hasError('required') && minaForm.get('fechaInicio')?.touched" style="margin-top: -20px">
+                <span class="mda-form-msg"> Este campo es obligatorio </span>
+            </div>
+            <!--tipo-->
+            <mat-form-field>
+                <mat-select placeholder="Tipo" formControlName="tipo" required>
+                    <mat-option value="Tajo Abierto">Tajo Abierto</mat-option>
+                    <mat-option value="Subterránea">Subterranea</mat-option>
+                    <mat-option value="Mixta">Mixta</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div *ngIf="minaForm.get('tipo')?.hasError('required') && minaForm.get('tipo')?.touched" style="margin-top: -20px">
+                <span class="mda-form-msg"> Este campo es obligatorio </span>
+            </div>
+            <!--Toneladas-->
+            <mat-form-field>
+                <input matInput placeholder="Toneladas Producidas" formControlName="toneladasProducidas" />
+            </mat-form-field>
+
+            <button class="button" mat-raised-button color="primary" [disabled]="minaForm.invalid" type="button" style="margin-left: 10 px" (click)="crearMina()"> Ok </button>
+            <button class="button" mat-raised-button color="warn" type="button" routerLink="/listar"> Cancel </button>
+        </div>
+    </form>
+</mat-card>

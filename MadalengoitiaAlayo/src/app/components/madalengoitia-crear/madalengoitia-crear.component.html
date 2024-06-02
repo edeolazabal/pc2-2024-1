@@ -1,0 +1,100 @@
+<mat-card>
+    <h2>Registrar Mina</h2>
+  
+<form [formGroup]="myForm" autocomplete="off">
+    <div class="auto-container">
+      <mat-form-field>
+        <input
+        matInput
+        placeholder="Nombre"
+        formControlName="nombre"
+        required />
+      </mat-form-field>
+      <div
+      *ngIf="
+        myForm.get('nombre')?.hasError('required') &&
+        myForm.get('nombre')?.touched
+      "
+      style="margin-top: -20px"
+    >
+      <span class="mda-form-msg"> Este campo es obligatorio </span>
+    </div>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha de Inicio de Operacion</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="fechaOperacion">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <div
+      *ngIf="
+        myForm.get('fechaOperacion')?.hasError('required') &&
+        myForm.get('fechaOperacion')?.touched
+      "
+      style="margin-top: -20px"
+    >
+      <span class="mda-form-msg"> Este campo es obligatorio </span>
+    </div>
+
+    <mat-form-field>
+      <mat-label>Tipo</mat-label>
+      <select matNativeControl formControlName="tipo" required>
+        <option value="tajoabierto">Tajo Abierto</option>
+        <option value="subterranea">Subterranea</option>
+        <option value="mixta">Mixta</option>
+      </select>
+    </mat-form-field>
+    <div
+      *ngIf="
+        myForm.get('tipo')?.hasError('tipo') &&
+        myForm.get('tipo')?.touched
+      "
+      style="margin-top: -20px"
+    >
+      <span class="mda-form-msg"> Este campo es obligatorio </span>
+    </div>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          placeholder="Toneladas producidas"
+          formControlName="toneladaspro"
+          required
+        />
+      </mat-form-field>
+      
+  
+  </div>
+  
+  <div>
+    <button class="button"
+    mat-raised-button
+    color="primary"
+    [disabled]="myForm.invalid"
+    type="button"
+    style="margin-left: 10 px"
+    (click)="addMina()"
+  >
+  
+    Ok
+  </button>
+  
+  <button class="button"
+  mat-raised-button
+  color="warn"
+  type="button"
+  routerLink="/list"
+  >
+  Cancel
+  </button>
+  
+  
+  
+  
+  
+    </div>
+  
+  </form>
+  </mat-card>

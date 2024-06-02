@@ -1,0 +1,30 @@
+<mat-card>
+    <div class=""list-container>
+        <mat-table [dataSource]="minas" class="mat-elevation-z8">
+        <!-- Codigo Column -->
+        <ng-container matColumnDef="codigo">
+          <mat-header-cell *matHeaderCellDef> codigo </mat-header-cell>
+          <mat-cell *matCellDef="let mina"> {{ mina.codigo }} </mat-cell>
+        </ng-container>
+
+        <!-- nombre Column -->
+        <ng-container matColumnDef="nombre">
+          <mat-header-cell *matHeaderCellDef> nombre </mat-header-cell>
+          <mat-cell *matCellDef="let mina"> {{ mina.nombre }} </mat-cell>
+        </ng-container>
+
+        <!-- tipo Column -->
+        <ng-container matColumnDef="tipo">
+          <mat-header-cell *matHeaderCellDef> tipo </mat-header-cell>
+          <mat-cell *matCellDef="let mina"> {{ mina.tipo }} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        
+        </mat-table>
+
+        <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[3, 6, 9]" aria-label="Select page"> </mat-paginator>
+
+    </div>
+</mat-card>

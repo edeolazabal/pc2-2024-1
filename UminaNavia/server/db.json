@@ -1,0 +1,76 @@
+{
+  "minas": [
+    {
+      "codigo": 1,
+      "nombre": "Mina El Dorado",
+      "fechaInicio": "2015-03-25T00:00:00Z",
+      "tipo": "Oro",
+      "toneladasProducidas": 50000,
+      "id": "0a6e"
+    },
+    {
+      "codigo": 2,
+      "nombre": "Mina La Esperanza",
+      "fechaInicio": "2010-07-14T00:00:00Z",
+      "tipo": "Cobre",
+      "toneladasProducidas": 75000,
+      "id": "f788"
+    },
+    {
+      "codigo": 3,
+      "nombre": "Mina Santa María",
+      "fechaInicio": "2018-11-20T00:00:00Z",
+      "tipo": "Plata",
+      "toneladasProducidas": 30000,
+      "id": "cf6b"
+    },
+    {
+      "id": "7f54",
+      "codigo": "4",
+      "nombre": "abc",
+      "fechaInicio": "2024-01-01",
+      "tipo": "Plata",
+      "toneladasProducidas": "2333"
+    },
+    {
+      "id": "e07a",
+      "codigo": "5",
+      "nombre": "PRUEBA2",
+      "fechaInicio": "2023-01-01",
+      "tipo": "Oro",
+      "toneladasProducidas": ""
+    },
+    {
+      "id": "bb32",
+      "codigo": "6",
+      "nombre": "Luis",
+      "fechaInicio": "2024-05-31T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladasProducidas": ""
+    },
+    {
+      "id": "97b1",
+      "codigo": "7",
+      "nombre": "Prueba 3",
+      "fechaInicio": "2024-05-08T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladasProducidas": ""
+    },
+    {
+      "id": "afe9",
+      "codigo": "9",
+      "nombre": "123",
+      "fechaInicio": "2024-05-02T05:00:00.000Z",
+      "tipo": "Tajo Abierto",
+      "toneladasProducidas": "123"
+    },
+    {
+      "id": "0a7e",
+      "codigo": "11",
+      "nombre": "LUIS",
+      "fechaInicio": "2024-05-16T05:00:00.000Z",
+      "tipo": "Subterránea",
+      "toneladasProducidas": "100"
+    }
+  ]
+}

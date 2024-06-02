@@ -1,0 +1,85 @@
+
+
+<mat-card class="blue-background">
+  <form [formGroup]="myForm" autocomplete="off">
+    <div class="mina-container">
+      
+      <!-- Campo de Nombre -->
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Nombre"
+          formControlName="nombre"
+          required />
+      </mat-form-field>
+      <div
+        *ngIf="myForm.get('nombre')?.hasError('required') && myForm.get('nombre')?.touched"
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg">Este campo es obligatorio</span>
+      </div>
+  
+      <!-- Campo de selección de fecha -->
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="fecha_inicio">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <div
+        *ngIf="myForm.get('fecha_inicion')?.hasError('required') && myForm.get('fecha_inicio')?.touched"
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg">Este campo es obligatorio</span>
+      </div>
+  <!-- Campo de Nombre -->
+  <mat-form-field>
+    <mat-label>Tipo</mat-label>
+    <select matNativeControl formControlName="tipo" required>
+      <option value="Tajo Abierto">Tajo Abierto</option>
+      <option value="Subterránea">Subterránea</option>
+      <option value="Mixta">Mixta</option>
+    </select>
+  </mat-form-field>
+  <div *ngIf="myForm.get('tipo')?.hasError('required') && myForm.get('tipo')?.touched">
+    <span class="mda-form-msg">Este campo es obligatorio</span>
+  </div>
+      <!-- Campo de Duración -->
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          placeholder="toneladas_producidas"
+          formControlName="toneladas_producidas"
+          required
+        />
+      </mat-form-field>
+      
+      </div>
+  
+      <!-- Botones -->
+      <div>
+        <button class="button"
+          mat-raised-button
+          color="primary"
+          [disabled]="myForm.invalid"
+          type="button"
+          style="margin-left: 10px"
+          (click)="addMina()"
+        >
+          Ok
+        </button>
+  
+        <button class="button"
+          mat-raised-button
+          color="warn"
+          type="button"
+          trouterLink="/sanchez/nuevo"
+        >
+          Cancel
+        </button>
+      </div>
+    
+  </form>
+</mat-card>

@@ -1,0 +1,45 @@
+<div class="title-container"><h1>Registro de Minas</h1></div>
+<div>
+  <form [formGroup]="myForm" (ngSubmit)="addAuto()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" />
+      <mat-error *ngIf="myForm.get('nombre')?.hasError('required')">
+        El nombre es obligatorio.
+      </mat-error>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha de Inicio de Operación</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="fechaInicioOperacion" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="myForm.get('fechaInicioOperacion')?.hasError('required')">
+        La fecha de inicio de operación es obligatoria.
+      </mat-error>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field appearance="fill">
+      <mat-label>Tipo</mat-label>
+      <mat-select formControlName="tipo">
+        <mat-option *ngFor="let tipo of listaTipos" [value]="tipo.value">
+          {{ tipo.viewvalue }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="myForm.get('tipo')?.hasError('required')">
+        El tipo es obligatorio.
+      </mat-error>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field appearance="fill">
+      <mat-label>Toneladas Producidas</mat-label>
+      <input matInput formControlName="toneladasProducidas" type="number" />
+    </mat-form-field>
+    <br />
+
+    <button mat-raised-button color="primary">Registrar</button>
+  </form>
+</div>

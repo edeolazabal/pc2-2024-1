@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+        <br/>
+        <br/>
+      <h2>Registro de investigación</h2>
+      <form [formGroup]="form" (submit)="aceptar()" class="example-form">
+        <mat-form-field class="example-full-width">
+
+          <mat-label>Código</mat-label>
+          <input matInput placeholder="codigo" formControlName="codigo" />
+          <mat-error
+            *ngIf="obtenerControlCampo('codigo')?.errors?.['required']"
+          >
+            El codigo es obligatorio.
+          </mat-error>
+        </mat-form-field>
+        <br />
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Descripción</mat-label>
+          <input
+            matInput
+            placeholder="descripcion"
+            formControlName="descripcion"
+          />
+          <mat-error
+            *ngIf="obtenerControlCampo('descripcion')?.errors?.['required']"
+          >
+            La descripción es obligatoria. 
+          </mat-error>
+        </mat-form-field>
+        <br />
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            <input
+              matInput
+              placeholder="Ingrese fecha"
+              [matDatepicker]="picker"
+              formControlName="fechaAprobacion"
+              [max]="maxFecha"
+            />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle
+              matIconSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error
+              *ngIf="obtenerControlCampo('fechaAprobacion')?.errors?.['required']"
+            >
+            La fecha de aprobación es obligatoria.
+            </mat-error>
+          </mat-form-field>
+        <br />
+        <br/>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Tipo</mat-label>
+          <mat-select formControlName="tipo">
+            <mat-option *ngFor="let t of tipos" [value]="t.value">
+              {{t.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="obtenerControlCampo('tipo')?.errors?.['required']">
+            El tipo es obligatorio.
+          </mat-error>
+        </mat-form-field>
+        <br />
+       
+        <mat-form-field class="example-full-width">
+            <mat-label>Presupuesto</mat-label>
+            <input
+              matInput
+              placeholder="presupuesto"
+              formControlName="presupuesto"
+            />
+          </mat-form-field>
+          <br />
+
+        <button mat-raised-button color="warn">Aceptar</button>
+
+        
+        <p>{{ mensaje }}</p>
+      </form>
+    </div>
+  </body>
+</html>

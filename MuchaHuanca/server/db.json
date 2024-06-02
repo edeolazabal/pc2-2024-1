@@ -1,0 +1,26 @@
+{
+    "investigaciones": [
+      {
+        "codigo": "1",
+        "descripcion": "TETETE",
+        "fechaaprobacion": "10/10/2020",
+        "tipo": "tete",
+        "presupuesto": "20000"
+      },
+      {
+        "codigo": "2",
+        "descripcion": "TETETE",
+        "fechaaprobacion": "10/10/2020",
+        "tipo": "tete",
+        "presupuesto": "20000"
+      },
+      {
+        "codigo": "3",
+        "descripcion": "TETETE",
+        "fechaaprobacion": "10/10/2020",
+        "tipo": "tete",
+        "presupuesto": "20000"
+      }
+      
+    ]
+  }

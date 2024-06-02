@@ -1,0 +1,68 @@
+<mat-card>
+    <h2>Nuevo Ingreso</h2>
+  
+    <form [formGroup]="investigacionForm" autocomplete="off">
+      <div class="curso-container">
+        <mat-form-field>
+          <input
+          matInput
+          placeholder="Investigacion"
+          formControlName="descrpcion"
+          required />
+        </mat-form-field>
+        <div
+      *ngIf="
+        investigacionForm.get('brand')?.hasError('required') &&
+        investigacionForm.get('brand')?.touched
+      "
+      style="margin-top: -20px"
+    >
+      <span class="mda-form-msg"> Este campo es obligatorio </span>
+    </div>
+  
+    <mat-form-field>
+      <input
+      matInput
+      placeholder="price"
+      formControlName="price"
+      required />
+    </mat-form-field>
+    <div
+  *ngIf="
+    investigacionForm.get('price')?.hasError('required') &&
+    investigacionForm.get('price')?.touched
+  "
+  style="margin-top: -20px"
+  >
+  <span class="mda-form-msg"> Este campo es obligatorio </span>
+  </div>
+  
+  <button class="button"
+  mat-raised-button
+  color="primary"
+  [disabled]="investigacionForm.invalid"
+  type="button"
+  style="margin-left: 10 px"
+  (click)="crearInvestigacion()"
+  >
+  Ok
+  </button>
+  
+  <button class="button"
+  mat-raised-button
+  color="warn"
+  type="button"
+  routerLink="/listar"
+  >
+  Cancel
+  </button>
+  
+  
+  
+      </div>
+  
+    </form>
+  
+  
+  </mat-card>
+  

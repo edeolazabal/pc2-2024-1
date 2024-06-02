@@ -1,0 +1,32 @@
+<mat-card>
+  <h2>Nueva Descripcion</h2>
+    <form [formGroup]="myForm" (ngSubmit)="addDescription()">
+      <mat-form-field appearance="fill">
+        <mat-label>Descripción</mat-label>
+        <input matInput formControlName="description" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Fecha</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Tipo</mat-label>
+        <mat-select formControlName="type" required>
+          <mat-option *ngFor="let type of investigationTypes" [value]="type">
+            {{ type }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Presupuesto</mat-label>
+        <input matInput formControlName="budget" type="number">
+      </mat-form-field>
+  
+      <button mat-raised-button color="warn" type="submit">Registrar</button>
+    </form>
+  </mat-card>

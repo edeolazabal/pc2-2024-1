@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Mina Management</span>
+    <span class="example-spacer"></span>
+    <button mat-button color="accent" [routerLink]="'/montes'">
+      <mat-icon>list</mat-icon> List
+    </button>
+    <button mat-button color="accent" [routerLink]="'/montes/nuevo'">
+      <mat-icon>add</mat-icon> Add
+    </button>
+    <button mat-icon-button color="accent" aria-label="Example icon button with a home icon" [routerLink]="'/'">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button color="accent" aria-label="Example icon button with an info icon" [routerLink]="'/info'">
+      <mat-icon>info</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

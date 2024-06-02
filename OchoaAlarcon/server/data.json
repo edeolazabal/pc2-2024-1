@@ -1,0 +1,125 @@
+{
+  "investigations": [
+    {
+      "codigo": "INV001",
+      "descripcion": "Investigación sobre energías renovables",
+      "fechaAprobacion": "2023-01-15",
+      "tipo": "Académico",
+      "presupuesto": 50000
+    },
+    {
+      "codigo": "INV002",
+      "descripcion": "Estudio de mercado para productos tecnológicos",
+      "fechaAprobacion": "2023-02-10",
+      "tipo": "Comercial",
+      "presupuesto": 150000
+    },
+    {
+      "codigo": "INV003",
+      "descripcion": "Optimización de procesos administrativos",
+      "fechaAprobacion": "2023-03-20",
+      "tipo": "Administrativo",
+      "presupuesto": 75000
+    },
+    {
+      "codigo": "INV004",
+      "descripcion": "Análisis de impacto ambiental",
+      "fechaAprobacion": "2023-04-05",
+      "tipo": "Académico"
+    },
+    {
+      "codigo": "INV005",
+      "descripcion": "Desarrollo de nuevas tecnologías en agricultura",
+      "fechaAprobacion": "2023-05-10",
+      "tipo": "Académico",
+      "presupuesto": 100000
+    },
+    {
+      "codigo": "INV006",
+      "descripcion": "Investigación sobre inteligencia artificial",
+      "fechaAprobacion": "2023-06-15",
+      "tipo": "Académico",
+      "presupuesto": 200000
+    },
+    {
+      "codigo": "INV007",
+      "descripcion": "Estudio de la economía global post-pandemia",
+      "fechaAprobacion": "2023-07-20",
+      "tipo": "Comercial",
+      "presupuesto": 250000
+    },
+    {
+      "codigo": "INV008",
+      "descripcion": "Investigación sobre cambio climático",
+      "fechaAprobacion": "2023-08-25",
+      "tipo": "Académico",
+      "presupuesto": 300000
+    },
+    {
+      "codigo": "INV009",
+      "descripcion": "Desarrollo de energías limpias",
+      "fechaAprobacion": "2023-09-30",
+      "tipo": "Académico",
+      "presupuesto": 350000
+    },
+    {
+      "codigo": "INV010",
+      "descripcion": "Estudio de la biodiversidad en el Amazonas",
+      "fechaAprobacion": "2023-10-05",
+      "tipo": "Académico",
+      "presupuesto": 400000
+    },
+    {
+      "codigo": "INV011",
+      "descripcion": "Optimización de la logística en empresas",
+      "fechaAprobacion": "2023-11-10",
+      "tipo": "Administrativo",
+      "presupuesto": 50000
+    },
+    {
+      "codigo": "INV012",
+      "descripcion": "Investigación sobre la eficiencia energética",
+      "fechaAprobacion": "2023-12-15",
+      "tipo": "Académico",
+      "presupuesto": 450000
+    },
+    {
+      "codigo": "INV013",
+      "descripcion": "Desarrollo de productos biotecnológicos",
+      "fechaAprobacion": "2023-01-20",
+      "tipo": "Comercial",
+      "presupuesto": 550000
+    },
+    {
+      "codigo": "INV014",
+      "descripcion": "Estudio del comportamiento del consumidor",
+      "fechaAprobacion": "2023-02-25",
+      "tipo": "Comercial",
+      "presupuesto": 600000
+    },
+    {
+      "id": "93c8",
+      "codigo": "plop",
+      "descripcion": "suiii",
+      "fechaAprobacion": "2024-05-09T05:00:00.000Z",
+      "tipo": "Administrativo",
+      "presupuesto": 2
+    },
+    {
+      "id": "ba21",
+      "codigo": "sdfsdfs",
+      "descripcion": "wazaaaaaaaa",
+      "fechaAprobacion": "2024-05-17T05:00:00.000Z",
+      "tipo": "Administrativo",
+      "presupuesto": ""
+    },
+    {
+      "id": "11f0",
+      "codigo": "ALE1234",
+      "descripcion": "LORENZO",
+      "fechaAprobacion": "2024-05-24T05:00:00.000Z",
+      "tipo": "Administrativo",
+      "presupuesto": 2
+    }
+  ]
+}

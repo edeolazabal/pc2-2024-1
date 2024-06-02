@@ -1,0 +1,113 @@
+<mat-card>
+    <h2>Registrar Investigación</h2>
+  
+    <form [formGroup]="myForm" autocomplete="off">
+      <div class="investigacion-container">
+        <mat-form-field>
+          <input
+          matInput
+          placeholder="Código"
+          formControlName="codigo"
+          required />
+        </mat-form-field>
+        <div
+        *ngIf="
+          myForm.get('codigo')?.hasError('required') &&
+          myForm.get('codigo')?.touched
+        "
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg"> Este campo es obligatorio </span>
+      </div>
+  
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Descripción"
+            formControlName="descripcion"
+            required
+          />
+        </mat-form-field>
+        <div
+        *ngIf="
+          myForm.get('descripcion')?.hasError('required') &&
+          myForm.get('descripcion')?.touched
+        "
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg"> Este campo es obligatorio </span>
+      </div>
+  
+        <mat-form-field>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            placeholder="Fecha de Aprobación"
+            formControlName="fechaAprobacion"
+            required
+          />
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <div
+        *ngIf="
+          myForm.get('fechaAprobacion')?.hasError('required') &&
+          myForm.get('fechaAprobacion')?.touched
+        "
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg"> Este campo es obligatorio </span>
+      </div>
+  
+        <mat-form-field>
+          <mat-select placeholder="Tipo" formControlName="tipo" required>
+            <mat-option value="Académico">Académico</mat-option>
+            <mat-option value="Administrativo">Administrativo</mat-option>
+            <mat-option value="Comercial">Comercial</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div
+        *ngIf="
+          myForm.get('tipo')?.hasError('required') &&
+          myForm.get('tipo')?.touched
+        "
+        style="margin-top: -20px"
+      >
+        <span class="mda-form-msg"> Este campo es obligatorio </span>
+      </div>
+  
+        <mat-form-field>
+          <input
+            matInput
+            type="number"
+            placeholder="Presupuesto"
+            formControlName="presupuesto"
+          />
+        </mat-form-field>
+  
+      </div>
+  
+      <div>
+        <button class="button"
+        mat-raised-button
+        color="primary"
+        [disabled]="myForm.invalid"
+        type="button"
+        (click)="addInvestigation()"
+      >
+        Registrar
+      </button>
+  
+      <button class="button"
+      mat-raised-button
+      color="warn"
+      type="button"
+      routerLink="/ochoa/listar"
+      >
+      Cancelar
+      </button>
+    </div>
+  
+    </form>
+  </mat-card>
+  

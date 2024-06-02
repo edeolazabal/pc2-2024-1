@@ -1,0 +1,16 @@
+mat-card {
+    padding: 20px;
+  }
+  
+  mat-table {
+    width: 100%;
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 8px;
+  }
+  
+  mat-paginator {
+    margin-top: 20px;
+  }
+  

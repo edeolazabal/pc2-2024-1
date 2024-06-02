@@ -1,0 +1,22 @@
+/* Ajustar estilos para los mensajes de error */
+.mda-form-msg {
+  display: block;
+  height: 20px; /* Establecer una altura fija para los mensajes de error */
+  color: blue; /* Cambiar el color del texto del mensaje de error a azul */
+}
+
+/* Alinear los elementos del formulario horizontalmente */
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinear los elementos verticalmente en el centro */
+}
+
+.blue-background {
+  background-color: rgb(8, 91, 234);
+}
+
+mat-form-field {
+  margin-right: 20px; /* Espacio entre los campos */
+  background-color: rgb(44, 111, 228); /* Cambiar el color de fondo de los campos */
+}
